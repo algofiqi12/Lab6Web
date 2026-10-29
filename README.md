@@ -1,8 +1,8 @@
 # Lab6Web — Praktikum 6: JavaScript DOM dan Event Handling
 
 Mata Kuliah: Pemrograman Web (Pertemuan 7)
-Nama: Muhammad Naufal Ali Akbar
-NIM: 312310687
+Nama: Muhammad Alghofiqi
+NIM: 312310207
 Program Studi: Teknik Informatika, Universitas Pelita Bangsa
 
 ## Tujuan
