@@ -1,0 +1,30 @@
+:root { --biru: #173f75; --biru-muda: #e6f1ff; --aksen: #3478c8; --abu: #687386; --garis: #d5dce6; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, "Segoe UI", Roboto, sans-serif; color: #1c2430; background: #f6f8fb; line-height: 1.55; }
+.wrap { max-width: 640px; margin: 0 auto; padding: 24px 16px 48px; }
+section { background: #fff; border: 1px solid var(--garis); border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+h1, h2 { margin: 0 0 12px; color: var(--biru); }
+h1 { font-size: 1.6rem; } h2 { font-size: 1.15rem; }
+label { display: block; margin: 12px 0 4px; font-weight: 600; }
+input { width: 100%; padding: 10px; border: 1px solid #b8c2d1; border-radius: 6px; font: inherit; }
+input:focus-visible, button:focus-visible { outline: 3px solid var(--aksen); outline-offset: 2px; }
+button { margin-top: 12px; padding: 10px 16px; border: 0; border-radius: 6px; background: var(--aksen); color: #fff; font: inherit; cursor: pointer; }
+button:hover { background: var(--biru); }
+
+/* Latihan 3 */
+.highlight { color: #173f75; background-color: #e6f1ff; border-left: 4px solid #3478c8; padding: 12px; }
+.teks-besar { font-size: 1.4rem; }
+/* Eksperimen 4 */
+.tersembunyi { display: none; }
+
+/* Pesan form */
+#pesanForm.error, #pesanTugas.error { color: #b3261e; }
+#pesanForm.sukses, #pesanTugas.sukses { color: #1b6e3c; }
+
+/* Latihan 6 */
+.selesai span { text-decoration: line-through; color: #687386; }
+li { margin-bottom: 8px; }
+#daftarTugas { padding-left: 20px; }
+.hapus { background: #b3261e; margin-left: 6px; }
+.hapus:hover { background: #8c1d18; }
+li button { margin-top: 0; padding: 4px 10px; font-size: .9rem; }

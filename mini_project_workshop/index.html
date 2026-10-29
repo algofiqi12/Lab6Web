@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Pendaftaran Workshop Web</title>
+ <link rel="stylesheet" href="style.css">
+ <script src="script.js" defer></script>
+</head>
+<body>
+ <main class="halaman">
+  <header>
+   <h1>Daftar Workshop Web Dasar</h1>
+   <p>Sabtu, 14 November 2026 · Kuota terbatas. Isi data di bawah, lalu pilih sesi yang sesuai jadwalmu.</p>
+  </header>
+
+  <div class="kolom">
+   <form id="formWorkshop" novalidate>
+    <div class="field">
+     <label for="nama">Nama lengkap</label>
+     <input id="nama" name="nama" type="text" autocomplete="name" aria-describedby="errNama">
+     <p class="err" id="errNama"></p>
+    </div>
+
+    <div class="field">
+     <label for="email">Email</label>
+     <input id="email" name="email" type="email" autocomplete="email" aria-describedby="errEmail">
+     <p class="err" id="errEmail"></p>
+    </div>
+
+    <div class="field">
+     <label for="sesi">Sesi workshop</label>
+     <select id="sesi" name="sesi" aria-describedby="errSesi">
+      <option value="">— Pilih sesi —</option>
+      <option value="Pagi (09.00–11.00)">Pagi (09.00–11.00)</option>
+      <option value="Siang (13.00–15.00)">Siang (13.00–15.00)</option>
+      <option value="Sore (15.30–17.30)">Sore (15.30–17.30)</option>
+     </select>
+     <p class="info" id="infoSesi" aria-live="polite"></p>
+     <p class="err" id="errSesi"></p>
+    </div>
+
+    <div class="field">
+     <label for="harapan">Apa yang ingin kamu pelajari? <span class="opsional">(opsional)</span></label>
+     <textarea id="harapan" name="harapan" rows="4" maxlength="150"></textarea>
+     <p class="info"><span id="hitungHarapan">0</span>/150 karakter</p>
+    </div>
+
+    <div class="aksi">
+     <button type="submit" class="utama">Daftar sekarang</button>
+     <button type="button" class="sekunder" id="tombolReset">Hapus isian</button>
+    </div>
+    <p id="pesanSukses" class="sukses" role="status" aria-live="polite"></p>
+   </form>
+
+   <aside class="ringkasan" aria-labelledby="judulRingkasan">
+    <h2 id="judulRingkasan">Ringkasan pendaftaran</h2>
+    <dl>
+     <dt>Nama</dt><dd id="rNama" class="kosong">Belum diisi</dd>
+     <dt>Email</dt><dd id="rEmail" class="kosong">Belum diisi</dd>
+     <dt>Sesi</dt><dd id="rSesi" class="kosong">Belum dipilih</dd>
+     <dt>Harapan</dt><dd id="rHarapan" class="kosong">Belum diisi</dd>
+    </dl>
+   </aside>
+  </div>
+ </main>
+</body>
+</html>

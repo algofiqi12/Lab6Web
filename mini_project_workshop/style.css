@@ -1,0 +1,39 @@
+:root {
+  --kertas: #fbfaf7; --tinta: #1f2a37; --garis: #cfd6df;
+  --biru: #1f4e8c; --biru-tua: #163a6a; --merah: #b3261e; --hijau: #1b6e3c; --abu: #5d6879;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--kertas); color: var(--tinta); font-family: system-ui, "Segoe UI", Roboto, sans-serif; line-height: 1.55; }
+.halaman { max-width: 920px; margin: 0 auto; padding: 32px 16px 56px; }
+header h1 { margin: 0 0 6px; font-size: clamp(1.5rem, 4vw, 2.2rem); color: var(--biru-tua); letter-spacing: -0.01em; }
+header p { margin: 0 0 28px; color: var(--abu); max-width: 60ch; }
+
+.kolom { display: grid; grid-template-columns: 1.3fr 1fr; gap: 24px; align-items: start; }
+@media (max-width: 720px) { .kolom { grid-template-columns: 1fr; } }
+
+form { background: #fff; border: 1px solid var(--garis); border-radius: 10px; padding: 20px; }
+.field { margin-bottom: 16px; }
+label { display: block; font-weight: 600; margin-bottom: 4px; }
+.opsional { font-weight: 400; color: var(--abu); }
+input, select, textarea { width: 100%; padding: 10px; font: inherit; border: 1px solid #aab4c2; border-radius: 6px; background: #fff; color: inherit; }
+textarea { resize: vertical; }
+input:focus-visible, select:focus-visible, textarea:focus-visible, button:focus-visible { outline: 3px solid #6ea2e0; outline-offset: 2px; }
+.field.salah input, .field.salah select { border-color: var(--merah); }
+.err { color: var(--merah); margin: 4px 0 0; font-size: .9rem; min-height: 0; }
+.info { color: var(--abu); margin: 4px 0 0; font-size: .9rem; }
+
+.aksi { display: flex; gap: 10px; flex-wrap: wrap; }
+button { font: inherit; padding: 10px 18px; border-radius: 6px; cursor: pointer; border: 1px solid transparent; }
+.utama { background: var(--biru); color: #fff; }
+.utama:hover { background: var(--biru-tua); }
+.sekunder { background: #fff; color: var(--tinta); border-color: #aab4c2; }
+.sekunder:hover { background: #eef2f7; }
+
+.sukses { color: var(--hijau); font-weight: 600; margin: 14px 0 0; }
+.sukses:empty { margin: 0; }
+
+.ringkasan { background: #eef4fb; border: 1px solid #c4d6ee; border-radius: 10px; padding: 20px; }
+.ringkasan h2 { margin: 0 0 12px; font-size: 1.1rem; color: var(--biru-tua); }
+dt { font-weight: 600; margin-top: 10px; }
+dd { margin: 2px 0 0; overflow-wrap: anywhere; }
+dd.kosong { color: var(--abu); font-style: italic; }
